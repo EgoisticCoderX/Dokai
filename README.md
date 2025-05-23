@@ -1,6 +1,6 @@
 pip install -r requirements.txt# Dokai AI Assistant
 
-Dokai is an AI assistant powered by Groq's llama-4-scout model. It provides both a command-line interface and a web-based UI for interacting with the AI.
+Dokai is an AI assistant powered by Groq's llama-3.3-70b-versatile model. It provides both a command-line interface and a web-based UI for interacting with the AI.
 
 ## Features
 
