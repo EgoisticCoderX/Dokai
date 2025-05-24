@@ -26,7 +26,7 @@ def generate_response(prompt, web_search_enabled=False, model="llama-3.3-70b-ver
     Args:
         prompt (str): The user's input prompt
         web_search_enabled (bool): Whether to perform a web search before generating the response.
-        model (str): The model to use (default: llama-4-scout)
+        model (str): The model to use (default: llama-3.3-70b-versatile)
         max_tokens (int): Maximum number of tokens to generate
         
     Returns:
@@ -44,7 +44,7 @@ def generate_response(prompt, web_search_enabled=False, model="llama-3.3-70b-ver
         response = client.chat.completions.create(
             model=model,
             messages=[
-                {"role": "system", "content": "You are Dokai, a helpful AI assistant powered by Groq's llama-4-scout model. Provide concise and summarized responses."},
+                {"role": "system", "content": "You are Dokai, a helpful AI assistant powered by Groq's llama-3.3-70b-versatile. Provide concise and summarized responses."},
                 {"role": "user", "content": prompt}
             ],
             max_tokens=max_tokens
@@ -86,7 +86,7 @@ def search_web(query):
 if __name__ == "__main__":
 
     # Simple command-line interface for testing
-    print("Welcome to Dokai AI Assistant (powered by Groq's llama-4-scout)")
+    print("Welcome to Dokai AI Assistant (powered by Groq's llama-3.3-70b-versatile)")
     print("Type 'exit' to quit")
     print("Choose an option: (1) AI Search Only, (2) Web Search + AI")
     
